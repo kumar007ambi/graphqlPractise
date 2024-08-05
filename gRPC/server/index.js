@@ -16,14 +16,14 @@ const server = new grpc.Server();
 
 const customers = [{
     id: 'sdfshdfsd',
-    name: 'Chirag Goel',
+    name: 'Name 1',
     age: 22,
-    address: 'Bangalore'
+    address: 'Place 1'
 }, {
     id: 'cvvbcbewb',
-    name: 'Akshay Saini',
+    name: 'Name 2',
     age: 22,
-    address: 'Uttrakhand'
+    address: 'Place 2'
 }];
 
 server.addService(customersProto.CustomerService.service, {
